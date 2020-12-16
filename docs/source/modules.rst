@@ -1,7 +1,7 @@
-aesmc
-=====
+lib
+===
 
 .. toctree::
    :maxdepth: 4
 
-   aesmc
+   lib

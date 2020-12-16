@@ -10,8 +10,9 @@ Welcome to aesmc_recreate's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   aesmc
-   models
+   lib.aesmc
+   lib.models
+
 
 
 Indices and tables

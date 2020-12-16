@@ -1,57 +1,55 @@
-aesmc package
-=============
+AESMC 
+=================
 
-Code for Auto-Encoding Sequential Monte Carlo from paper [1]_:
-
-
+Code for Auto-Encoding Sequential Monte Carlo from the paper [1]_.
 
 Submodules
 ----------
 
-aesmc.inference module
-----------------------
+lib.aesmc.inference module
+--------------------------
 
-.. automodule:: aesmc.inference
+.. automodule:: lib.aesmc.inference
    :members:
    :undoc-members:
    :show-inheritance:
 
-aesmc.losses module
--------------------
-
-.. automodule:: aesmc.losses
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-aesmc.math module
------------------
-
-.. automodule:: aesmc.math
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-aesmc.state module
-------------------
-
-.. automodule:: aesmc.state
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-aesmc.statistics module
+lib.aesmc.losses module
 -----------------------
 
-.. automodule:: aesmc.statistics
+.. automodule:: lib.aesmc.losses
    :members:
    :undoc-members:
    :show-inheritance:
 
-aesmc.train module
-------------------
+lib.aesmc.math module
+---------------------
 
-.. automodule:: aesmc.train
+.. automodule:: lib.aesmc.math
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lib.aesmc.state module
+----------------------
+
+.. automodule:: lib.aesmc.state
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lib.aesmc.statistics module
+---------------------------
+
+.. automodule:: lib.aesmc.statistics
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lib.aesmc.train module
+----------------------
+
+.. automodule:: lib.aesmc.train
    :members:
    :undoc-members:
    :show-inheritance:
@@ -59,7 +57,7 @@ aesmc.train module
 Module contents
 ---------------
 
-.. automodule:: aesmc
+.. automodule:: lib.aesmc
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -34,9 +29,12 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="aesmc package" href="aesmc.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -50,7 +48,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Recreate Aesmc
+            <a href="index.html" class="icon icon-home"> Recreate Aesmc
           
 
           
@@ -73,7 +71,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -82,20 +79,13 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="aesmc.html">aesmc package</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">models package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-models.gaussian">models.gaussian module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-models">Module contents</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lib.html">lib package</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -134,7 +124,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>models package</li>
     
@@ -161,98 +151,11 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-models.gaussian">
-<span id="models-gaussian-module"></span><h2>models.gaussian module<a class="headerlink" href="#module-models.gaussian" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="models.gaussian.InferenceNetwork">
-<em class="property">class </em><code class="sig-prename descclassname">models.gaussian.</code><code class="sig-name descname">InferenceNetwork</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">init_mult</span></em>, <em class="sig-param"><span class="n">init_bias</span></em>, <em class="sig-param"><span class="n">init_std</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.InferenceNetwork" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="py method">
-<dt id="models.gaussian.InferenceNetwork.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">previous_latents</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">observations</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.InferenceNetwork.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
+<div class="section" id="models-gaussian-module">
+<h2>models.gaussian module<a class="headerlink" href="#models-gaussian-module" title="Permalink to this headline">¶</a></h2>
 </div>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="models.gaussian.InferenceNetwork.training">
-<code class="sig-name descname">training</code><em class="property">: bool</em><a class="headerlink" href="#models.gaussian.InferenceNetwork.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="models.gaussian.Likelihood">
-<em class="property">class </em><code class="sig-prename descclassname">models.gaussian.</code><code class="sig-name descname">Likelihood</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">init_std</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.Likelihood" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="py method">
-<dt id="models.gaussian.Likelihood.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">latents</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">previous_observations</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.Likelihood.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="models.gaussian.Likelihood.training">
-<code class="sig-name descname">training</code><em class="property">: bool</em><a class="headerlink" href="#models.gaussian.Likelihood.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="models.gaussian.Prior">
-<em class="property">class </em><code class="sig-prename descclassname">models.gaussian.</code><code class="sig-name descname">Prior</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">init_mean</span></em>, <em class="sig-param"><span class="n">std</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.Prior" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<p>Prior for gaussian model</p>
-<dl class="py method">
-<dt id="models.gaussian.Prior.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.Prior.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="models.gaussian.Prior.training">
-<code class="sig-name descname">training</code><em class="property">: bool</em><a class="headerlink" href="#models.gaussian.Prior.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="models.gaussian.TrainingStats">
-<em class="property">class </em><code class="sig-prename descclassname">models.gaussian.</code><code class="sig-name descname">TrainingStats</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">logging_interval</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.TrainingStats" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="models.gaussian.get_proposal_params">
-<code class="sig-prename descclassname">models.gaussian.</code><code class="sig-name descname">get_proposal_params</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prior_mean</span></em>, <em class="sig-param"><span class="n">prior_std</span></em>, <em class="sig-param"><span class="n">obs_std</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.gaussian.get_proposal_params" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</div>
-<div class="section" id="module-models">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-models" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -262,31 +165,16 @@ registered hooks while the latter silently ignores them.</p>
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="aesmc.html" class="btn btn-neutral float-left" title="aesmc package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -297,6 +185,7 @@ registered hooks while the latter silently ignores them.</p>
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
