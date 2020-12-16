@@ -1,6 +1,11 @@
 aesmc package
 =============
 
+Code for Auto-Encoding Sequential Monte Carlo:
+[1] Le, T. A., Igl, M., Rainforth, T., Jin, T., & Wood, F. (2017). Auto-encoding sequential monte carlo. arXiv preprint
+arXiv:1705.10306.
+
+
 Submodules
 ----------
 

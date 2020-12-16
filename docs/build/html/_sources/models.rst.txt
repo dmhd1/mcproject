@@ -1,6 +1,8 @@
 models package
 ==============
 
+This submodule lists all models.
+
 Submodules
 ----------
 
