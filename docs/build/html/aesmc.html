@@ -34,9 +34,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="models package" href="models.html" />
-    <link rel="prev" title="Welcome to aesmc_recreate’s documentation!" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,19 +79,7 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">aesmc package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.inference">aesmc.inference module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.losses">aesmc.losses module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.math">aesmc.math module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.state">aesmc.state module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.statistics">aesmc.statistics module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc.train">aesmc.train module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-aesmc">Module contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
-</ul>
-</li>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="models.html">models package</a></li>
 </ul>
 
@@ -161,7 +147,6 @@
             
   <div class="section" id="aesmc-package">
 <h1>aesmc package<a class="headerlink" href="#aesmc-package" title="Permalink to this headline">¶</a></h1>
-<p>Code for Auto-Encoding Sequential Monte Carlo from paper <a class="footnote-reference brackets" href="#id4" id="id1">1</a>:</p>
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -270,7 +255,7 @@ log_weights: list of tensors [batch_size, num_particles]</p>
 <div><p>of length len(observations)</p>
 </div></blockquote>
 <dl class="simple">
-<dt>ancestral_indices: list of <a href="#id2"><span class="problematic" id="id3">`</span></a>torch.LongTensor`s</dt><dd><p>[batch_size, num_particles] of length len(observations)</p>
+<dt>ancestral_indices: list of <a href="#id1"><span class="problematic" id="id2">`</span></a>torch.LongTensor`s</dt><dd><p>[batch_size, num_particles] of length len(observations)</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -688,14 +673,6 @@ batch_size: int</p>
 <div class="section" id="module-aesmc">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-aesmc" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<dl class="footnote brackets">
-<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Le, T. A., Igl, M., Rainforth, T., Jin, T., &amp; Wood, F. (2017). Auto-encoding sequential monte carlo. arXiv preprint arXiv:1705.10306.</p>
-</dd>
-</dl>
-</div>
 </div>
 
 
@@ -703,15 +680,6 @@ batch_size: int</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="models.html" class="btn btn-neutral float-right" title="models package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to aesmc_recreate’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

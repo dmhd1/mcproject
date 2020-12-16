@@ -15,7 +15,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath('../../lib/'))
 #primary_domain = 'mat'
 #MOCK_MODULES = ['torch', 'numpy', 'scipy', 'scipy.io', 'scipy.misc']
 #for mod_name in MOCK_MODULES:
