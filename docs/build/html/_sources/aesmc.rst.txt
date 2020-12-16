@@ -1,5 +1,8 @@
-aesmc package
+AESMC
 =============
+
+Package containing the code for Auto-Encoding Sequential Monte Carlo for 
+paper [1]_:
 
 Submodules
 ----------
@@ -59,3 +62,8 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+
+References
+----------
+
+.. [1] Le, T. A., Igl, M., Rainforth, T., Jin, T., & Wood, F. (2017). Auto-encoding sequential monte carlo. arXiv preprint arXiv:1705.10306.

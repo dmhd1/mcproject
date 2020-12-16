@@ -1,5 +1,7 @@
-models package
+Models
 ==============
+
+Implemented models, so far.
 
 Submodules
 ----------
